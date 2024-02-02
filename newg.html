@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menus;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 5px;
+            padding: 10px;
+            border: 1px solid;
+            grid-template-areas:
+                'header header header header header header'
+                'menus menus main main right right'
+                'menus menus footer footer footer footer';
+            background-color: #2196F3;
+        }
+
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Sidebar</div>
+        <div class="item3">Container-1</div>
+        <div class="item4">Container-2</div>
+        <div class="item5">Footer</div>
+    </div>
+</body>
+</html>

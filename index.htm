@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("Heello")
+        const names = ["Abc", "def", "eij"]
+        console.log(names)
+        console.log(names[0])
+        const lol = names.reverse()
+        const Name = () =>{
+            // preventDefault()
+            const name = document.getElementById("fname").value;
+
+            if (name.includes("@gmail.com")) {
+                alert("valid email")
+            } else alert("invalid")
+        }
+        // Name()
+        
+
+    </script>
+</head>
+<body>
+
+
+    
+    <h1>tHIS IS TRIAL</h1>
+    <form>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="email" id="fname" name="fname"><br>
+            <button type="button"  onclick="Name()">Validate</button>
+    </form>
+    
+</body>
+</html>

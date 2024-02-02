@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smartwatch UI</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      border: 1px;
+      border-color: brown;
+      background-color: black;
+    }
+
+    .watch {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #db6262;
+      border-radius: 10%;
+    background-image: url("https://seeklogo.com/images/F/fossil-logo-5D0FB64E38-seeklogo.com.png") ;
+    
+      box-shadow: 0 0 10px rgba(40, 5, 240, 0.3);
+      overflow: hidden;
+
+      
+    }
+
+    .time {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      border-color: brown;
+    }
+
+    .date {
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="main">
+  <div class="watch">
+    <div class="time"><b>11:11:11</b></div>
+    <div class="date"><b>Jan 29, 2024</b></div>
+  </div>
+</div>
+</body>
+</html>
