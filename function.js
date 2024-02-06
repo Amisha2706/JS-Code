@@ -13,12 +13,16 @@
 // }
 // console.log(loginusermessage("amisha"))
 
-function loginusermessage(username){
-  if(username===undefined){
-    console.log("please enter a username ")
-  }
+// function loginusermessage(username){
+//   if(username===undefined){
+//     console.log("please enter a username ")
+//   }
 
-  return `${username} just logged in`
+//   return `${username} just logged in`
+// }
+//   console.log(loginusermessage("Amisha"))
+
+function calculatecarprice(num1){
+  return num1
 }
-  console.log(loginusermessage("Amisha"))
-     
+     calculatecarprice(2)

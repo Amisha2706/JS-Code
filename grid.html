@@ -5,50 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .item1{
-            grid-area: Header;
-        }
-        .item2{
-            grid-area: Menus;
-        }
-        .item3{
-            grid-area: main;
-        }
-        .item4{
-            grid-area: right;
-        }
-        .item5{
-            grid-area: footer;
-        }
-        .grid-container{
-            display: grid;
-            gap: 5px;
-            padding:10px;
-            border: 1px solid;
-            grid-template-areas:
-            'header header header header header header'
-                'Menus main main main right right'
-                'Menus footer footer footer footer footer';
-            background-color: #2196F3;
-        }
-        .grid-container > div{
-            background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-
+        
+  body {
+    margin: 40px;
+  }
   
-        }
+
+      .wrapper {
+          display: grid;
+      gap: 10px;
+          grid-template-columns: 150px 100px 150px 100px ;
+          grid-template-rows: repeat(3,minmax(100px,auto));
+          background-color: #fff;
+          color: #444;
+      }
+  
+      .box {
+          background-color: #444;
+          color: #fff;
+          border-radius: 5px;
+          padding: 20px;
+          font-size: 150%;
+  
+      }
+  
+      .box .box {
+          background-color: #ccc;
+          color: #444;
+      }
+  
+      .a {
+          grid-column: 1 / 3;
+      }
+  
+      .b {
+          grid-column: 4 ;
+      }
+  
+      .c {
+        grid-column: 1;
+      grid-row: 2 / 4;
+      }
+  
+      .d{
+      
+      grid-column: 2 / 5;
+      grid-row: 2 / 4;
+          display: grid;
+        grid-template-columns: subgrid;
+      grid-template-rows: subgrid;
+      }
+  
+      .e {
+          grid-row: 1 / 3;
+      grid-column: 1 ;
+      }
+  
+      .f {
+          grid-row: 1;
+      grid-column: 2 / 4;
+      }
+  
+      .g {
+          grid-row: 2;
+      grid-column: 3;
+      }
     </style>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">Menus</div>
-        <div class="item3">main</div>
-        <div class="item4">Rights</div>
-       
-        <div class="item5">Footer</div>
-    </div>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+         <div class="box g">G</div>
+        </div>
+      </div>
+    
 </body>
 </html>
